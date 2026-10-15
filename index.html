@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Informacao()">clique aqui</button>
+
+<script>
+    function Informacao() {
+
+        // nome de ususario
+        let nome = prompt("digite seu nome:");
+        alert("bem-vindo, " + nome + "! vamos INFORMAR seus dados.");
+
+        // salario mensal
+        let salariomensal = parseFloat(prompt("digite seu salario mesnsal:"));
+        alert("seu salario mensal é R$ " + salariomensal.toFixed(2));
+
+        // gasto cpm alimentaçao
+        let alimentaçao = parseFloat(prompt("digite seu gasto com alimnetaçao mensal:"));
+
+        //calculo do saldo
+        let saldo = salariomensal - alimentaçao;
+        alert("seu saldo final é R$ " + saldo.toFixed(2) + ". ");
+    }
+</script>
+</body>
+</html>
